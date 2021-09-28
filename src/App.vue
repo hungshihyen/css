@@ -7,9 +7,14 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro molestias laborum alias commodi soluta, dolor nobis neque enim ipsum, inventore ducimus dolorum distinctio incidunt, aliquid voluptas laudantium temporibus assumenda veritatis.
+    <span>Lorem ipsum dolor sit amet.</span>
+  </div>
 </template>
 
-<style>
+<style lang='scss'>
+@import './style.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
