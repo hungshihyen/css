@@ -1,11 +1,22 @@
 <template>
-  <div>yoga</div>
+  <Nav />
+  <Footer />
 </template>
 
-<script setup>
+<script>
+import Nav from './Nav/index.vue'
+import Footer from './Footer/index.vue'
+export default {
+  components: {
+    Nav,
+    Footer
+  },
+  setup () {
 
+  }
+}
 </script>
 
-<style lang="scss">
-
+<style>
+@import './styles/base.scss';
 </style>
