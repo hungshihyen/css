@@ -1,26 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
-  <div class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro molestias laborum alias commodi soluta, dolor nobis neque enim ipsum, inventore ducimus dolorum distinctio incidunt, aliquid voluptas laudantium temporibus assumenda veritatis.
-    <span>Lorem ipsum dolor sit amet.</span>
-  </div>
+  <Yoga />
 </template>
 
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import Yoga from './yoga/index.vue'
+export default {
+    components: {
+        Yoga
+    }
+}
 </script>
 
-<style lang='scss'>
-@import './style.scss';
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import './reset.scss';
 </style>
