@@ -70,6 +70,10 @@ nav {
       background-color: transparent;
       border: none;
       outline: none;
+
+      &:hover{
+        color:lighten($color: #707070, $amount: 5)
+      }
     }
   }
 
@@ -96,9 +100,14 @@ nav {
       background-color: transparent;
       border: 1px solid #907a7b;
       border-radius: 1rem;
+      cursor: pointer;
 
       + button {
         margin-left: 1rem;
+      }
+
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.3);
       }
     }
   }
