@@ -5,9 +5,15 @@
     </div>
 
     <div class="nav-center desktop">
-      <button>課程介紹</button>
-      <button>瑜珈空間</button>
-      <button>當月課表</button>
+      <button class="nav-center-button">
+        課程介紹
+      </button>
+      <button class="nav-center-button">
+        瑜珈空間
+      </button>
+      <button class="nav-center-button">
+        當月課表
+      </button>
     </div>
 
     <div class="nav-end mobile">
@@ -19,8 +25,12 @@
       </div>
     </div>
     <div class="nav-end desktop">
-      <button>立即預約</button>
-      <button>聯絡我們</button>
+      <button class="nav-end-button">
+        立即預約
+      </button>
+      <button class="nav-end-button">
+        聯絡我們
+      </button>
     </div>
   </nav>
 </template>
@@ -33,9 +43,11 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  display: flex;
+  display: grid;
+  grid-template-areas: 'start center end';
+  // grid-template-rows: 1fr;
+  // grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: space-between;
   height: 80px;
   padding: 0 1rem;
   background-color: #f5f0e7;
@@ -62,7 +74,10 @@ nav {
   }
 
   &-center {
-    button {
+    grid-area: center;
+    justify-self: center;
+
+    .nav-center-button {
       font-size: 1rem;
       line-height: 1.5rem;
       color: #707070;
@@ -71,13 +86,16 @@ nav {
       border: none;
       outline: none;
 
-      &:hover{
-        color:lighten($color: #707070, $amount: 5)
+      &:hover {
+        color: lighten($color: #707070, $amount: 5);
       }
     }
   }
 
   &-end {
+    grid-area: end;
+    justify-self: end;
+
     .hamburger {
       display: flex;
       flex-direction: column;
@@ -92,21 +110,21 @@ nav {
       }
     }
 
-    button {
+    .nav-end-button {
       padding: 0.5rem 1rem;
       font-size: 1rem;
       line-height: 1.5rem;
       color: #907a7b;
+      cursor: pointer;
       background-color: transparent;
       border: 1px solid #907a7b;
       border-radius: 1rem;
-      cursor: pointer;
 
       + button {
         margin-left: 1rem;
       }
 
-      &:hover{
+      &:hover {
         background-color: rgba(255, 255, 255, 0.3);
       }
     }
