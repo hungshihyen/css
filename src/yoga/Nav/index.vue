@@ -1,36 +1,38 @@
 <template>
-  <nav>
-    <div class="nav-start">
-      DOYOGA
-    </div>
-
-    <div class="nav-center desktop">
-      <button class="nav-center-button">
-        課程介紹
-      </button>
-      <button class="nav-center-button">
-        瑜珈空間
-      </button>
-      <button class="nav-center-button">
-        當月課表
-      </button>
-    </div>
-
-    <div class="nav-end mobile">
-      <div class="hamburger">
-        <div class="line" />
-        <div class="line" />
-        <div class="line" />
-        <div class="line" />
+  <nav class="nav-wrap">
+    <div class="container nav">
+      <div class="nav-start">
+        DOYOGA
       </div>
-    </div>
-    <div class="nav-end desktop">
-      <button class="nav-end-button">
-        立即預約
-      </button>
-      <button class="nav-end-button">
-        聯絡我們
-      </button>
+
+      <div class="nav-center desktop">
+        <button class="nav-center-button">
+          課程介紹
+        </button>
+        <button class="nav-center-button">
+          瑜珈空間
+        </button>
+        <button class="nav-center-button">
+          當月課表
+        </button>
+      </div>
+
+      <div class="nav-end mobile">
+        <div class="hamburger">
+          <div class="line" />
+          <div class="line" />
+          <div class="line" />
+          <div class="line" />
+        </div>
+      </div>
+      <div class="nav-end desktop">
+        <button class="nav-end-button">
+          立即預約
+        </button>
+        <button class="nav-end-button">
+          聯絡我們
+        </button>
+      </div>
     </div>
   </nav>
 </template>
@@ -42,15 +44,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav {
+.nav-wrap {
+  background-color: #f5f0e7;
+}
+
+.nav {
   display: grid;
   grid-template-areas: 'start center end';
   // grid-template-rows: 1fr;
   // grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 80px;
-  padding: 0 1rem;
-  background-color: #f5f0e7;
 
   .mobile {
     @media (min-width: 768.1px) {
@@ -65,9 +69,7 @@ nav {
       display: block;
     }
   }
-}
 
-.nav {
   &-start {
     font-size: 1.5rem;
     line-height: 2rem;
