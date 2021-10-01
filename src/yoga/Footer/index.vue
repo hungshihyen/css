@@ -5,12 +5,14 @@
         <div class="subscribe">
           現在訂閱，獲得課程優惠碼！
         </div>
-        <div class="email">
-          <input
-            type="text"
-            placeholder="輸入您的電子信箱"
-          >
-          <button>訂閱</button>
+        <div class="email-wrap">
+          <div class="email">
+            <input
+              type="text"
+              placeholder="輸入您的電子信箱"
+            >
+            <button>訂閱</button>
+          </div>
         </div>
       </section>
       <section class="footer-bottom">
@@ -58,33 +60,36 @@ export default {
     }
   }
 
-  .email {
-    display: flex;
+  .email-wrap {
+    width: 100%;
 
-    input {
-      width: 100%;
-      max-width: 278px;
-      padding: 0.5rem 0 0.5rem 1rem;
-      font-size: 1rem;
-      border: 1px solid #c0a4a5;
-      border-right: 1px solid transparent;
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
-      outline: none;
+    .email {
+      display: flex;
+      max-width: 350px;
 
       @media (min-width: 768.1px) {
         margin-left: auto;
       }
-    }
 
-    button {
-      width: 21%;
-      max-width: 72px;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      color: #fff;
-      background-color: #c0a4a5;
-      border: none;
+      input {
+        flex-grow: 1;
+        padding: 0.5rem 0 0.5rem 1rem;
+        font-size: 1rem;
+        border: 1px solid #c0a4a5;
+        border-right: 1px solid transparent;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        outline: none;
+      }
+
+      button {
+        width: 72px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #c0a4a5;
+        border: none;
+      }
     }
   }
 }

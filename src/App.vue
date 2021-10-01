@@ -5,9 +5,9 @@
 <script>
 import Yoga from './yoga/index.vue'
 export default {
-    components: {
-        Yoga
-    }
+  components: {
+    Yoga
+  }
 }
 </script>
 
