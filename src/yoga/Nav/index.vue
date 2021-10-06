@@ -99,15 +99,15 @@ export default {
     justify-self: end;
 
     .hamburger {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-auto-columns: 1fr;
+      gap: 4px;
       justify-content: space-evenly;
       width: 2rem;
       height: 1.5rem;
 
       .line {
-        width: 100%;
-        height: calc(100% / 4 - 3px);
         background-color: #907a7b;
       }
     }
