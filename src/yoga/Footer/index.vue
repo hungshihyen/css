@@ -64,7 +64,8 @@ export default {
     width: 100%;
 
     .email {
-      display: flex;
+      display: grid;
+      grid-template-columns: auto 72px;
       max-width: 350px;
 
       @media (min-width: 768.1px) {
