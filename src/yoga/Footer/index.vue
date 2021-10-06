@@ -16,10 +16,18 @@
         </div>
       </section>
       <section class="footer-bottom">
-        <div>DOYOGA</div>
-        <div>課程介紹</div>
-        <div>瑜珈空間</div>
-        <div>瑜珈空間</div>
+        <div class="title">
+          DOYOGA
+        </div>
+        <button class="footer-button">
+          課程介紹
+        </button>
+        <button class="footer-button">
+          瑜珈空間
+        </button>
+        <button class="footer-button">
+          當月課表
+        </button>
         <div class="copy-right">
           © 2021. All Rights Reserved.
         </div>
@@ -43,7 +51,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   border-bottom: 1px solid #fff;
 
   @media (min-width: 768.1px) {
@@ -95,4 +103,49 @@ export default {
   }
 }
 
+.footer-bottom {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  color: #fff;
+
+  div,
+  button {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  .footer-button {
+    display: block;
+    width: 64px;
+    padding: 0 0;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      color: #eee;
+    }
+  }
+
+  .copy-right {
+    @media (min-width: 768.1px) {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
 </style>
