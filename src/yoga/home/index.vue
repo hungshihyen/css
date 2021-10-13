@@ -1,12 +1,15 @@
 <template>
-  <router-view />
+  <div class="home" />
 </template>
 
 <script>
 export default {
+
 }
 </script>
 
-<style lang="scss">
-@import './reset.scss';
+<style lang="scss" scoped>
+.home{
+
+}
 </style>

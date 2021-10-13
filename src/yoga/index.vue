@@ -1,13 +1,14 @@
 <template>
   <Nav />
-  <section class="body" />
+  <!-- <section class="body" /> -->
+  <router-view />
   <Footer />
   <!-- https://xd.adobe.com/view/ddcefee3-3028-48a2-8840-4d3ba00e8807-889d/grid -->
 </template>
 
 <script>
-import Nav from './Nav/index.vue'
-import Footer from './Footer/index.vue'
+import Nav from './nav/index.vue'
+import Footer from './footer/index.vue'
 export default {
   components: {
     Nav,
