@@ -1,15 +1,16 @@
 <template>
-  <div class="home" />
+  <div class="home">
+    <Banner />
+  </div>
 </template>
 
 <script>
+import Banner from './banner.vue'
 export default {
-
+  components: {
+    Banner
+  }
 }
 </script>
 
-<style lang="scss" scoped>
-.home{
-
-}
-</style>
+<style lang="scss" scoped></style>
